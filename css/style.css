@@ -1,0 +1,50 @@
+body {
+  background-color: aqua;
+  margin: 0;
+}
+
+.container {
+  background-color: grey;
+  height: 100vh;
+}
+
+.row {
+  background-color: orange;
+  height: 100vh;
+}
+
+.colBox {
+  background-color: white;
+  height: 80vh;
+  border: 1px solid salmon;
+}
+.calc {
+  background-color: rgb(51, 51, 51);
+  width: 300px;
+  height: 400px;
+  padding: 4px;
+  border-top-left-radius: 10px;
+}
+.calc-input {
+  margin: 2px;
+  margin-top: 10px;
+}
+input {
+  background-color: rgb(51, 51, 51);
+}
+.guarda {
+  background-color: rgb(56, 56, 56);
+  height: 30px;
+}
+.fila {
+  background-color: coral;
+  height: 63px;
+  border: 1px solid black;
+  display: flex;
+}
+.boton {
+  width: 75px;
+}
+.boton1 {
+  width: 150px;
+}
