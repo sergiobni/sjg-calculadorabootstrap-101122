@@ -1,18 +1,22 @@
+let memoria = document.getElementById('memoria');
+let pantalla = document.getElementById('pantalla');
+let tag = document.getElementById('tag');
+let selector = document.getElementById('selector');
+let value = document.getElementById('valor');
+
 function element(id) {
   if (id === 'btn=') {
-    resultado = eval(document.getElementById('pantalla').value);
-    document.getElementById('memoria').textContent += `${resultado} | `;
-    document.getElementById('pantalla').value = '';
-    document.getElementById('tag').innerHTML =
-      document.getElementById(id).innerHTML;
+    let resultado = eval(document.getElementById('pantalla').value);
+    memoria.textContent += `${resultado} | `;
+    pantalla.value = '';
   } else if (id === 'btnc') {
-    document.getElementById('pantalla').value = '';
-    document.getElementById('memoria').textContent = '';
-    document.getElementById('tag').innerHTML =
-      document.getElementById(id).innerHTML;
+    pantalla.value = '';
+    memoria.textContent = '';
   } else {
     let element = document.getElementById(id).innerHTML;
-    document.getElementById('pantalla').value += element.trim();
-    document.getElementById('tag').innerHTML = element;
+    pantalla.value += element.trim();
   }
+  selector.innerHTML = document.getElementById(id).type;
+  tag.innerHTML = id;
+  value.innerHTML = document.getElementById(id).innerHTML;
 }
